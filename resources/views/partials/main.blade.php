@@ -1,6 +1,5 @@
 <main>
     <section class="jumbotron">
-        <img src="{{ Vite::asset('resources/images/jumbotron.jpg') }}" alt="">
         <button>current series</button>
     </section>
     <div class="my-container">

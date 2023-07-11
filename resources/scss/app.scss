@@ -1,1 +1,243 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+// REGOLE SCSS HEADER
+header {
+    height: 10vh;
+    padding: 10px;
+    div {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        img {
+            height: 80%;
+        }
+        nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    list-style: none;
+                    padding: 0px 15px;
+                    line-height: calc(15vh - 5px);
+                    &:hover {
+                        color: #0282f9;
+                        border-bottom: 5px solid #0282f9;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// REGOLE SCSS MAIN
+main {
+    background-color: #1c1c1c;
+    padding-bottom: 20px;
+
+    section.jumbotron {
+        height: 40vh;
+        background-image: url('../images/jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        position: relative;
+
+        button {
+            background-color: #0282f9;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            border: none;
+            position: absolute;
+            bottom: -5%;
+            left: 30%;
+            cursor: pointer;
+        }
+    }
+
+    div.my-container {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            div.my-card {
+                    width: calc(100% / 6);
+                    padding: 10px;
+                    margin-bottom: 25px;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+
+                        object-fit: cover;
+                        object-position: top;
+                    }
+
+                    h6 {
+                        margin-top: 10px;
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                }
+        }
+
+        div.my-button {
+            text-align: center;
+
+            button {
+                background-color: #0282f9;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 600;
+                padding: 10px 45px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer{
+    height: 850px;
+
+    div.my-container{
+        height: 100%;
+        section.first-section{
+            height: 170px;
+            background-color: #0282f9;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            z-index: 1;
+            position: relative;
+            img{
+                height: 100%;
+                padding: 20px 80px;
+
+            }
+            nav{
+                height: 100%;
+                width: 1200px;
+                margin: 0 auto;
+                ul{
+                    display: flex;
+                    text-align: center;
+                    justify-content: space-around;
+                    height: 100%;
+                    li{
+                        list-style: none;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 20px;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu{
+            display: flex;
+            gap: 20px;
+            padding-left: 330px;
+        }
+        .second-container{
+            height: 530px;
+            margin: 0 auto;
+            display: flex;
+            padding: 40px 0;
+            overflow: hidden;
+            gap: 100px;
+        }
+        section.second-section{
+            background-image: url('../images/footer-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+
+                div{
+                    margin-right: 25px;
+                    ul{
+                        li{
+                            color: white;
+                            list-style: none;
+                            h3{
+                                text-transform: uppercase;
+                                margin-bottom: 8px;
+                            }
+                            a{
+                                color: inherit;
+                                margin-bottom: 5px;
+                                text-decoration: none;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    ul:first-of-type{
+                        margin-bottom: 15px;
+                    }
+                }
+                div:last-of-type{
+                    flex-grow: 1;
+                }
+
+                img{
+                    width: 650px;
+
+                }
+        }
+        section.third-section{
+            height: 150px;
+            background-color: #303030;
+            div{
+                // max-width: 1200px;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div:first-child{
+                    flex-grow: 1;
+                    button{
+                        color: white;
+                        text-transform: uppercase;
+                        border: 2px solid #0282f9;
+                        padding: 10px 15px;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+                }
+                div:last-child{
+                    a{
+                        text-decoration: none;
+                        color: #0282f9;
+                        text-transform: uppercase;
+                        margin-right: 5px;
+                    }
+                    img{
+                        height: 25px;
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+    }
